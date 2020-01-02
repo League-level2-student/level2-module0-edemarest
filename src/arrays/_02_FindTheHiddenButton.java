@@ -27,7 +27,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 	public static void main(String[] args) {
 		new _02_FindTheHiddenButton().start();
 	}
-	
+	 
 	public void start() {
 		window = new JFrame("Find the Button");
 		panel = new JPanel();
@@ -55,7 +55,7 @@ public class _02_FindTheHiddenButton implements ActionListener{
 		//11. set the JFrame to visible.
 		window.setVisible(true);
 		//12. Give the user the instructions for the game.
-		
+		JOptionPane.showMessageDialog(null,  "Remember where the hidden button is and see if you can click where it hid!");
 		//13. initialize the hiddenButton variable to a random number less than the int created in step 3
 		Random rand = new Random();
 		int hiddenButton = rand.nextInt(num - 1);
